@@ -27,6 +27,7 @@ A modern full-stack invoice management application built with TypeScript, featur
 
 - Node.js (v18 or higher)
 - Docker and Docker Compose
+- Prisma/PostgreSQL
 - npm or yarn
 - Git
 
@@ -34,16 +35,17 @@ A modern full-stack invoice management application built with TypeScript, featur
 
 ```
 .
-├── backend/         # NestJS API with Prisma
+├── backend/        # NestJS API with Prisma
 │   ├── prisma/     # Database schema and migrations
-│   ├── src/        # Application source code
-│   └── test/       # Test files
+│   └── src/        # Application source code
+│
 └── frontend/       # React application
-    ├── src/        # Application source code
+    └── src/        # Application source code
         ├── components/  # Reusable components
-        ├── pages/      # Route components
-        ├── store/      # Redux store configuration
-        └── api/        # API integration
+        ├── pages/       # Route components
+        ├── store/       # Redux store config
+        ├── types/       # TypeScript/Zod Schemas
+        └── api/         # API integration
 ```
 
 ## Getting Started
@@ -51,7 +53,7 @@ A modern full-stack invoice management application built with TypeScript, featur
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/MohamadAlsyouf/Invoice-Dashboard.git
 cd InvoiceDashboard
 ```
 
