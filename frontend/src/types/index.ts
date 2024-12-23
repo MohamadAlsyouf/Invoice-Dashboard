@@ -21,8 +21,6 @@ export const invoiceSchema = z.object({
   description: z.string(),
   paid: z.boolean(),
   user_id: z.string().uuid(),
-  createdAt: z.string().datetime(),
-  updatedAt: z.string().datetime(),
 });
 
 // Types inferred from schemas

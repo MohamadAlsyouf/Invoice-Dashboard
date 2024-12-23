@@ -31,8 +31,7 @@ export const InvoiceModal = ({ invoiceId, onClose }: InvoiceModalProps) => {
     }
   };
 
-  if (!invoiceId || !invoice) return null;
-  if (isLoading) return null;
+  if (!invoiceId || !invoice || isLoading) return null;
 
   return (
     <div
