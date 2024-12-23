@@ -52,7 +52,7 @@ export function Invoices() {
             {invoices?.map((invoice) => (
               <tr key={invoice.id} className="hover:bg-gray-50">
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                  {invoice.payee}
+                  {invoice.vendor_name}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                   {formatCurrency(invoice.amount)}

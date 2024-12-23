@@ -15,7 +15,7 @@ export const loginSchema = z.object({
 // Invoice schema
 export const invoiceSchema = z.object({
   id: z.string().uuid(),
-  payee: z.string(),
+  vendor_name: z.string(),
   amount: z.number(),
   due_date: z.string().datetime(),
   description: z.string(),
