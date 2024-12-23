@@ -8,6 +8,7 @@ import { Login } from "./pages/Login";
 import { Invoices } from "./pages/Invoices";
 import { useSelector } from "react-redux";
 import type { RootState } from "./store";
+import { Home } from "./pages/Home";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ function App() {
           <Layout>
             <Routes>
               <Route path="/login" element={<Login />} />
+              <Route path="/" element={<Home />} />
               <Route
                 path="/invoices"
                 element={
