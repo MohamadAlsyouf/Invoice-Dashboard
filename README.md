@@ -99,8 +99,10 @@ npm install
 
 # Start the frontend development server
 npm run dev
-
-# Demo Login Credentials
+```
+5. Demo Login Credentials
+```bash
+# Login Credentials
 Username: demo@altametrics.com
 Password: password1234
 ```
