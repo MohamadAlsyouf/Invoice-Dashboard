@@ -4,8 +4,8 @@ services:
     container_name: invoice_dashboard
     image: postgres:latest
     environment:
-      POSTGRES_USER: altametrics
-      POSTGRES_PASSWORD: altametrics
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
       POSTGRES_DB: invoice_dashboard
     ports:
       - "5432:5432"
