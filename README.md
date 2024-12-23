@@ -52,7 +52,7 @@ A modern full-stack invoice management application built with TypeScript, featur
 
 ```bash
 git clone <repository-url>
-cd invoice-dashboard
+cd InvoiceDashboard
 ```
 
 2. Start PostgreSQL using Docker:
@@ -70,7 +70,7 @@ cd backend
 # Install dependencies
 npm install
 
-# Set up environment variables
+# Set up environment variables (configure .env file after this command)
 cp .env.example .env
 
 # Generate Prisma Client
