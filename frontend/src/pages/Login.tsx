@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { login } from "../services/api";
+import { login } from "../api/api";
 import { setCredentials } from "../store/authSlice";
 import { loginSchema, type LoginCredentials } from "../types";
 
@@ -26,7 +26,7 @@ export function Login() {
           token: response.access_token,
         })
       );
-      navigate("/invoices");
+      navigate("/");
     } catch (err) {
       if (err.errors) {
         // Zod validation error
