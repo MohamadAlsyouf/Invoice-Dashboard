@@ -97,6 +97,10 @@ npm install
 
 # Start the frontend development server
 npm run dev
+
+# Demo Login Credentials
+Username: demo@altametrics.com
+Password: password1234
 ```
 
 ### Database Schema
@@ -125,3 +129,9 @@ The application runs on:
 - Backend API: http://localhost:3000
 - Frontend: http://localhost:5173
 - Prisma Studio: http://localhost:5555
+
+  ## Preview
+  ![image](https://github.com/user-attachments/assets/03a75311-2a92-47bb-a2fc-45d54a397eaa)
+  ![image](https://github.com/user-attachments/assets/ff53649e-dfe7-40b1-9efd-31eab7b8de47)
+
+
