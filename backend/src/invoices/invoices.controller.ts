@@ -9,12 +9,12 @@ export class InvoicesController {
 
   @Get()
   findAll(@Request() req) {
-    return this.invoicesService.findAll(req.user.userId);
+    return this.invoicesService.findAll(req.user.id);
   }
 
   @Get(':id')
   findOne(@Param('id') id: string, @Request() req) {
-    return this.invoicesService.findOne(id, req.user.userId);
+    return this.invoicesService.findOne(id, req.user.id);
   }
 
   @Get('total')

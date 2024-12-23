@@ -18,22 +18,16 @@ model User {
   email    String    @unique
   password String
   name     String
-  invoices Invoice[]
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
 }
 
 model Invoice {
   id          String    @id @default(uuid())
-  vendor_name String
+  vendor_name       String
   amount      Float
   due_date    DateTime
   description String
-  paid        Boolean   @default(false)
-  user        User      @relation(fields: [user_id], references: [id])
   user_id     String
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  paid        Boolean   @default(false)
 
   @@index([user_id])
 }
