@@ -1,6 +1,6 @@
 # Invoice Dashboard
 
-A modern full-stack invoice management application built with TypeScript, featuring a NestJS backend and React frontend.
+A modern full-stack invoice management application built for Altametrics with TypeScript, featuring a NestJS backend and React frontend. 
 
 ## Tech Stack
 
